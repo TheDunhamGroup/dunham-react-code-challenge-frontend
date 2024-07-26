@@ -3,6 +3,8 @@ import * as React from "react";
 import { createRoot } from "react-dom/client";
 import { HashRouter, Route, Routes, Link } from "react-router-dom";
 
+const API_URL = "http://challenge.dunhamweb.com"
+
 // The Header creates links that can be used to navigate.
 const Header = () => (
   <header>
@@ -24,7 +26,7 @@ const Header = () => (
 const Home = () => {
   function resetUsers(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
-    fetch("https://manage.thedunhamgroup.com/aws-server/Reset").then((e) => {
+    fetch(API_URL + "/Reset").then((e) => {
       alert("Users reset.");
     });
   }
@@ -52,8 +54,7 @@ const Team = () => {
   const [error, setError] = useState(null);
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    console.log("FETCHING");
-    fetch("https://manage.thedunhamgroup.com/aws-server/Team")
+    fetch(API_URL + "/Team")
       .then((res) => res.json())
       .then(
         (result) => {
