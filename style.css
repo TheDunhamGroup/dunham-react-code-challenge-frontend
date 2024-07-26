@@ -1,0 +1,42 @@
+* {
+    font-family: arial;
+  }
+  code {
+    border: 1px solid lightgrey;
+    padding: 5px;
+    background: GhostWhite;
+    white-space: nowrap;
+  }
+  
+  body {
+    height: 100%;
+  }
+  
+  html {
+    height: 100% !important;
+  }
+  
+  .base {
+    height: 100%;
+  }
+  
+  .base > div {
+    padding: 2rem;
+  }
+  
+  .profile-image {
+    border: 2px solid #525252;
+    border-radius: 25%;
+    width: 100%;
+  }
+  
+  .instructions {
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
+    background: ghostwhite;
+    height: max-content;
+  }
+  .instructions p {
+    margin-bottom: 0.5rem;
+  }
+  
