@@ -2,7 +2,7 @@
 
 1. Clone the repository:
 
-`https://github.com/TheDunhamGroup/dunham-react-code-challenge`
+`git clone https://github.com/TheDunhamGroup/dunham-react-code-challenge`
 
 2. Switch to Node version 20
 
