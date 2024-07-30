@@ -3,7 +3,7 @@ import * as React from "react";
 import { createRoot } from "react-dom/client";
 import { HashRouter, Route, Routes, Link } from "react-router-dom";
 
-const API_URL = "http://challenge.dunhamweb.com"
+const API_URL = "https://challenge.dunhamweb.com"
 
 // The Header creates links that can be used to navigate.
 const Header = () => (
